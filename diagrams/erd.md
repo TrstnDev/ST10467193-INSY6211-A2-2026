@@ -39,3 +39,8 @@ MEDICAL_EMERGENCY {
 	string natureOfEmergency
 	string status
 }
+
+%% ---------- RELATIONSHIPS ----------
+PASSENGER }o--o| AMENITY : "requests location of"
+PASSENGER ||--o{ FLIGHT_BOOKING : "holds"
+PASSENGER ||--o{ MEDICAL_EMERGENCY : "reports"
