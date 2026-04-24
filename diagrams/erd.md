@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
 direction TB
 %% =======================================
@@ -109,3 +110,4 @@ AIRPORT ||--o{ GATE : "has"
 %% Gate Relationships
 GATE |o--o{ FLIGHT : "is departure gate for"
 GATE |o--o{ FLIGHT : "is arrival gate for"
+```
