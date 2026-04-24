@@ -1,4 +1,5 @@
 erDiagram
+direction TB
 %% =======================================
 %% Airport Customer Relationship Management System
 %% Entity Relationship Diagram - Q3.1
@@ -96,4 +97,15 @@ PASSENGER ||--o{ FLIGHT_BOOKING : "holds"
 %% Business Rule 3
 PASSENGER ||--o{ MEDICAL_EMERGENCY : "reports"
 
-%% Additions
+%% Revised Additions
+FLIGHT ||--o{ FLIGHT_BOOKING : "is booked on"
+
+%% Airport Relationships
+AIRPORT ||--o{ FLIGHT : "is departure airport for"
+AIRPORT ||--o{ FLIGHT : "is arrival airport for"
+AIRPORT ||--o{ AMENITY : "contains"
+AIRPORT ||--o{ GATE : "has"
+
+%% Gate Relationships
+GATE |o--o{ FLIGHT : "is departure gate for"
+GATE |o--o{ FLIGHT : "is arrival gate for"
