@@ -11,15 +11,15 @@ Start([User opens the CRMS app]):::entry
 
 
 %% ---------- IN-APP SCREENS ----------
-Overview["Screen 01<br/>Flights Overview<br/><i>List of saved flights with live status</i>"]:::screen
+Overview["<u>Screen 01</u><br/><b>Flights Overview</b><br/><i>List of saved flights with live status</i>"]:::screen
 
-Detail["Screen 02<br/>Flight Detail<br/><i>Full boarding-pass style breakdown</i>"]:::screen
+Detail["<u>Screen 02</u><br/><b>Flight Detail</b><br/><i>Full boarding-pass style breakdown</i>"]:::screen
 
 
 %% ---------- SYSTEM-LEVEL TOUCHPOINTS ----------
-Lock["Screen 03<br/>Lock-screen Notification<br/><i>Compact alert delivered by iOS</i>"]:::system
+Lock["<u>Screen 03</u><br/><b>Lock-screen Notification</b><br/><i>Compact alert delivered by iOS</i>"]:::system
 
-LockExpanded["Screen 04<br/>Notification Expanded<br/><i>Tap-and-hold reveals full alert content</i>"]:::system
+LockExpanded["<u>Screen 04</u><br/><b>Notification Expanded</b><br/><i>Tap-and-hold reveals full alert content</i>"]:::system
 
 
 %% ---------- USER ACTIONS ----------
@@ -28,7 +28,7 @@ Overview -->|Tap 'View' on a flight card| Detail
 Detail -->|Tap back-chevron| Overview
 
 %% Asynchronous server-pushed event - boarding gate change
-Server[(Server-side<br/><i>Gate change detected</i>)]:::server
+Server[(<b>Server-side</b><br/><i>Gate change detected</i>)]:::server
 Server -.->|Push notification| Lock
 Lock -->|Tap-and-hold notification| LockExpanded
 LockExpanded -->|Tap 'View in app'| Detail
